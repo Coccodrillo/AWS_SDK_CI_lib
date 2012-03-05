@@ -6,11 +6,11 @@ AWS SDK is already included as a submodule, so all you need to do is clone it in
 
 Sample usage:
 
-`public function index()
+``php
+public function index()
 {
 	$this->load->library('awslib');
 	$sqs = new AmazonSQS();
 	$response = $sqs->list_queues();
 	var_dump($response->isOK());
-}`
-
+}``
